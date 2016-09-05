@@ -208,6 +208,3 @@ EOF
 	done
     )
 }
-
-(ignore_list && syscall_list $(dirname $0)/../arch/x86/syscalls/syscall_32.tbl) | \
-$* -E -x c - > /dev/null
